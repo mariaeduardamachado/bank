@@ -1,9 +1,16 @@
 class AddFildsToUsers < ActiveRecord::Migration[7.0]
   def change
     add_column :users, :name, :string
-    add_column :users, :phone, :string
-    add_column :users, :cpf, :string
-    add_column :users, :rg, :string
-    add_column :users, endereco, :string
+    add_column :users, :phone, :integer
+    add_column :users, :cpf, :integer
+    add_column :users, :rg, :integer
+    add_column :users, :road, :string
+    add_column :users, :neighborhood, :string
+    add_column :users, :number, :string
+    add_column :users, :complement, :string
+    add_column :users, :active, :boolean
+    add_column :users, :cep, :integer
+    add_column :users, :income, :string
+    add_column :users, :patrimony, :string
   end
 end
